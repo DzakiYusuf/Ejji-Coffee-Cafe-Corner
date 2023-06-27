@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
+--
+-- Host: localhost    Database: remenkopi3
+-- ------------------------------------------------------
+-- Server version	8.0.33
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `pembelian`
+--
+
+DROP TABLE IF EXISTS `pembelian`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pembelian` (
+  `id_pembelian` int NOT NULL AUTO_INCREMENT,
+  `id_pelanggan` int NOT NULL,
+  `id_metode` int NOT NULL,
+  `tanggal_pembelian` date NOT NULL,
+  `total_pembelian` int NOT NULL,
+  `metode` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_pembelian`)
+) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pembelian`
+--
+
+LOCK TABLES `pembelian` WRITE;
+/*!40000 ALTER TABLE `pembelian` DISABLE KEYS */;
+INSERT INTO `pembelian` VALUES (35,40,1,'2022-06-29',23000,'Gopay'),(36,41,2,'2022-06-29',50000,'Ovo'),(37,42,2,'2022-06-29',15000,'Ovo'),(38,43,3,'2022-06-29',28000,'Shopee Pay'),(39,44,4,'2022-06-29',10000,'Dana'),(40,45,3,'2022-06-29',10000,'Shopee Pay'),(41,46,4,'2022-06-29',13000,'Dana'),(42,47,1,'2023-06-03',85000,'Gopay'),(43,47,1,'2023-06-03',85000,'Gopay'),(44,47,1,'2023-06-03',85000,'Gopay'),(45,47,1,'2023-06-03',85000,'Gopay'),(46,48,1,'2023-06-03',15000,'Gopay'),(47,48,1,'2023-06-03',15000,'Gopay'),(48,50,2,'2023-06-03',15000,'Ovo'),(49,50,2,'2023-06-03',15000,'Ovo'),(50,51,1,'2023-06-03',26000,'Gopay'),(51,51,1,'2023-06-03',26000,'Gopay'),(52,52,3,'2023-06-03',82000,'Shopee Pay'),(53,52,3,'2023-06-03',82000,'Shopee Pay'),(54,52,3,'2023-06-03',82000,'Shopee Pay'),(55,52,2,'2023-06-03',82000,'Ovo'),(56,52,2,'2023-06-03',82000,'Ovo'),(57,52,2,'2023-06-03',82000,'Ovo'),(58,52,1,'2023-06-03',82000,'Gopay'),(59,53,2,'2023-06-03',79000,'Ovo'),(60,53,2,'2023-06-03',79000,'Ovo'),(61,53,2,'2023-06-03',79000,'Ovo'),(62,53,2,'2023-06-03',79000,'Ovo'),(63,54,2,'2023-06-03',42000,'Ovo'),(64,55,2,'2023-06-03',10000,'Ovo'),(65,55,1,'2023-06-03',10000,'Gopay'),(66,55,1,'2023-06-03',10000,'Gopay'),(67,55,3,'2023-06-03',10000,'Shopee Pay'),(68,55,1,'2023-06-03',10000,'Gopay'),(69,56,3,'2023-06-03',20000,'Shopee Pay'),(70,56,2,'2023-06-03',20000,'Ovo'),(71,56,2,'2023-06-03',20000,'Ovo'),(72,57,2,'2023-06-03',10000,'Ovo'),(73,57,2,'2023-06-03',10000,'Ovo'),(74,57,2,'2023-06-03',10000,'Ovo'),(75,58,2,'2023-06-03',66000,'Ovo'),(76,59,3,'2023-06-04',20000,'Shopee Pay'),(77,60,1,'2023-06-07',26000,'Gopay'),(78,62,1,'2023-06-08',22000,'Gopay');
+/*!40000 ALTER TABLE `pembelian` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-06-08  6:46:52
